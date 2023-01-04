@@ -5,7 +5,7 @@ Interface between Javascript game pad methods and ActionScript 2 "ExternalInterf
 
 - Gamepad layout follows the standard found here: https://w3c.github.io/gamepad/#remapping
 
-- To view and edit the AS2 code within output.swf you will need a copy of the Flash IDE (I use cs5.5)
+- To view and edit the AS2 code within output.fla (which compiled to output.swf) you will need a copy of the Flash IDE (I use cs5.5)
 
 - Consider uploading your resulting project file(s) to Newgrounds for the Flash Forward Jam!
 https://www.newgrounds.com/bbs/topic/1517301
