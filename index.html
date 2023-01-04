@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PestoForce - RufflePad Demo</title>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <script>
+        window.RufflePlayer.config = {
+            autoplay: "on",
+            unmuteOverlay: "hidden",
+            logLevel: "info",
+            preloader: false,
+        };
+    </script>
+    <script src="./gamepad.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+</head>
+<body style="background: #000000;">
+    <div id="canvas-wrap" style="display: flex; justify-content: center; align-items: center;">
+        <object id="output" type="application/x-shockwave-flash" data="output.swf" width="550" height="400">
+            <param name="movie" value="output.swf" />
+            <param name="allowscriptaccess" value="always">
+        </object>
+    </div>
+</body>
+</html>
