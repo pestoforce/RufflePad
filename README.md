@@ -1,4 +1,4 @@
-# RufflePad
+# 🎮 RufflePad
 Interface between Javascript game pad methods and ActionScript 2 "ExternalInterface" for use with the Ruffle Flash emulator.
 
 - Uses the well-documented Javascript Game Pad API: https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API
