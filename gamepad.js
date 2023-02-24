@@ -7,7 +7,9 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 window.addEventListener("gamepadconnected", (e) => {
-    jsLog("Gamepad connected at index %d: %s. %d buttons, %d axes.", e.gamepad.index, e.gamepad.id, e.gamepad.buttons.length, e.gamepad.axes.length);
+    const [index, id, numBtns, numAxes] = 
+        [e.gamepad.index, e.gamepad.id, e.gamepad.buttons.length, e.gamepad.axes.length];
+    jsLog(`Gamepad connected at index ${index}: ${id}. ${numBtns} buttons, ${numAxes} axes.`);
 
     if (!!flashObj && !!flashObj.handlePadEvent) {
         flashObj.handlePadEvent("gamepadconnected", e.gamepad.index);
@@ -15,7 +17,8 @@ window.addEventListener("gamepadconnected", (e) => {
 });
 
 window.addEventListener("gamepaddisconnected", (e) => {
-    jsLog("Gamepad disconnected from index %d: %s", e.gamepad.index, e.gamepad.id);
+    const [index, id] = [e.gamepad.index, e.gamepad.id];
+    jsLog(`Gamepad disconnected from index ${index}: ${id}`);
 
     if (!!flashObj && flashObj.handlePadEvent) {
         flashObj.handlePadEvent("gamepaddisconnected", e.gamepad.index);
